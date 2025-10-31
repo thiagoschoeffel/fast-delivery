@@ -1,0 +1,3 @@
+[11-Dec-2020 09:22:12 America/Sao_Paulo] PHP Fatal error:  Cannot redeclare Produto_model::lista_por_id() in /home1/sabors78/public_html/sistema/application/models/Produto_model.php on line 48
+[12-Jan-2021 16:02:42 America/Sao_Paulo] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home1/sabors78/public_html/sistema/application/controllers/App.php on line 85
+[12-Jan-2021 16:03:11 America/Sao_Paulo] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home1/sabors78/public_html/sistema/system/database/DB_driver.php on line 1296

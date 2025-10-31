@@ -1,0 +1,181 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap");
+
+body {
+    background-color: rgba(0, 0, 0, 0.03);
+    font-family: "Noto Sans", sans-serif;
+    font-size: 0.875rem;
+}
+
+.main_loading {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.main_loading_content {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 200px;
+    background-color: #fff;
+}
+
+.main_loading_content_icon {
+    display: inline-block;
+    position: relative;
+    width: 64px;
+    height: 64px;
+}
+
+.main_loading_content_icon div {
+    position: absolute;
+    border: 4px solid #000;
+    border-radius: 50%;
+    opacity: 1;
+    animation: main_loading_content_icon 1s cubic-bezier(0, 0.2, 0.8, 1)
+        infinite;
+}
+
+.main_loading_content_icon div:nth-child(2) {
+    animation-delay: -0.5s;
+}
+
+@keyframes main_loading_content_icon {
+    0% {
+        top: 28px;
+        left: 28px;
+        width: 0;
+        height: 0;
+        opacity: 1;
+    }
+    100% {
+        top: -1px;
+        left: -1px;
+        width: 58px;
+        height: 58px;
+        opacity: 0;
+    }
+}
+
+.dropdown-menu,
+.form-control,
+.btn {
+    font-size: 0.875rem;
+}
+
+table,
+.table {
+    margin-bottom: 0;
+    white-space: nowrap;
+}
+
+table tr td,
+table tr th,
+.table tr td,
+.table tr th {
+    padding-left: 10px;
+    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.main_table {
+    width: 100%;
+    height: 400px;
+    overflow: auto;
+    border: 1px solid #dee2e6;
+}
+
+.main_table_action {
+    text-align: center;
+}
+
+.g-recaptcha {
+    transform: scale(0.75);
+    transform-origin: 0 25%;
+}
+
+a,
+a:hover {
+    color: #282828;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(41, 18, 49, 0.25);
+}
+
+.btn-primary:not(:disabled):not(.disabled).active,
+.btn-primary:not(:disabled):not(.disabled):active,
+.show > .btn-primary.dropdown-toggle {
+    background-color: #282828;
+    border-color: #282828;
+}
+
+.list-group-item.active {
+    background-color: #282828;
+    border-color: #282828;
+}
+
+.btn-primary,
+.btn-primary:hover {
+    background-color: #282828;
+    border-color: #282828;
+}
+
+.btn-primary.focus,
+.btn-primary:focus {
+    background-color: #282828;
+    border-color: #282828;
+    box-shadow: 0 0 0 0.2rem rgba(41, 18, 49, 0.25);
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background-color: #282828;
+}
+
+.form-control:focus {
+    border-color: #282828;
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+    background-color: #282828;
+}
+
+.custom-control-input:checked ~ .custom-control-label::before {
+    background-color: #282828;
+    border-color: #282828;
+}
+
+.custom-control-input:focus ~ .custom-control-label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+.custom-control-input:not(:disabled):active ~ .custom-control-label::before {
+    background-color: rgba(0, 0, 0, 0.25);
+    border-color: rgba(0, 0, 0, 0.25);
+}
+
+.page-link,
+.page-link:hover {
+    color: #282828;
+}
+
+.page-link:focus {
+    box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.25);
+}
+
+.page-item.active .page-link {
+    background-color: #282828;
+    border-color: #282828;
+}
