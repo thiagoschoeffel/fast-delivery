@@ -12,16 +12,21 @@ App em PHP/CodeIgniter 3 para gestão de pedidos e entregas de fast food — com
 ## 📦 Rodando com Docker
 
 ### Pré-requisitos
-- [Docker](https://docs.docker.com/get-docker/) e [Docker Compose](https://docs.docker.com/compose/)
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/)
+- [NodeJS/npm](https://nodejs.org/en)
 
 ### Passos rápidos
 
 ```bash
 # 1) Clonar o repositório e entrar na pasta do projeto
-git clone https://github.com/thiagoschoeffel/fast-delivery.git
-cd fast-delivery
+git clone https://github.com/thiagoschoeffel/business-control.git
+cd business-control
 
-# 2) Subir os serviços (web + db)
+# 2) Instalar as dependências do JavaScript
+npm install
+
+# 3) Subir os serviços (web + db)
 docker compose up -d --build
 ```
 
@@ -65,3 +70,4 @@ docker compose down
 Este repositório é disponibilizado apenas para **visualização**. **Não é permitido** usar, copiar, modificar ou distribuir o código sem autorização **por escrito** do autor. 
 
 Todos os direitos reservados.
+
